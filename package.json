@@ -1,0 +1,17 @@
+{
+  "name": "product_search_with_elasticsearch",
+  "version": "1.0.0",
+  "description": "Product adding and searching server with node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hayk Atoyan",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "elasticsearch": "^13.3.1",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
+  }
+}
