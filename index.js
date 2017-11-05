@@ -1,11 +1,13 @@
 var express = require('express');
 var elasticsearch = require('elasticsearch');
+var bodyParser = require('body-parser');
 var app = express();
-
-require('./routes')(app);
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/bower_components'));
+app.use(bodyParser.urlencoded());
+
+require('./routes')(app);
 
 var client = new elasticsearch.Client({
 	host: 'localhost:9200',
